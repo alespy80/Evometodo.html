@@ -1,301 +1,183 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Método EVO</title>
-
-<meta name="description" content="Método EVO - Sistema de treinamento baseado em ativação neuromuscular e evolução física estratégica.">
-
-<style>
-
-:root{
---neon:#00e5ff;
---azul:#0066ff;
---bg:#020617;
---card:#0b1120;
---text:#e5e7eb;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-background:linear-gradient(180deg,#020617,#030c1a);
-color:var(--text);
-line-height:1.6;
-}
-
-/* HERO */
-
-header{
-padding:90px 20px;
-text-align:center;
-border-bottom:1px solid #111;
-}
-
-header h1{
-font-size:46px;
-color:var(--neon);
-letter-spacing:3px;
-text-shadow:0 0 12px #00e5ff80;
-}
-
-header p{
-margin-top:15px;
-font-size:20px;
-color:#9ca3af;
-max-width:600px;
-margin-left:auto;
-margin-right:auto;
-}
-
-/* BOTÕES */
-
-.btn{
-display:inline-block;
-margin-top:35px;
-padding:16px 34px;
-border-radius:40px;
-background:linear-gradient(45deg,var(--azul),var(--neon));
-color:white;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 0 20px var(--neon);
-transition:0.3s;
-}
-
-.btn:hover{
-transform:scale(1.06);
-box-shadow:0 0 45px var(--neon);
-}
-
-/* SEÇÕES */
-
-section{
-padding:70px 20px;
-max-width:1000px;
-margin:auto;
-}
-
-h2{
-color:var(--neon);
-margin-bottom:20px;
-font-size:30px;
-}
-
-/* CARDS */
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-margin-top:35px;
-}
-
-.card{
-background:var(--card);
-border:1px solid #111;
-padding:25px;
-border-radius:12px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-6px);
-border-color:var(--neon);
-box-shadow:0 0 15px #00e5ff20;
-}
-
-.card h3{
-color:var(--azul);
-margin-bottom:10px;
-}
-
-/* COMPARAÇÃO */
-
-.comparacao{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-margin-top:30px;
-}
-
-.box{
-background:var(--card);
-padding:25px;
-border-radius:10px;
-border:1px solid #111;
-}
-
-.tradicional h3{
-color:#ef4444;
-margin-bottom:10px;
-}
-
-.evo h3{
-color:var(--neon);
-margin-bottom:10px;
-}
-
-.box p{
-margin-bottom:8px;
-}
-
-/* DESTAQUE */
-
-.destaque{
-background:var(--card);
-border:1px solid var(--neon);
-padding:35px;
-border-radius:12px;
-text-align:center;
-margin-top:50px;
-box-shadow:0 0 20px #00e5ff20;
-}
-
-/* FOOTER */
-
-footer{
-text-align:center;
-padding:60px 20px;
-color:#9ca3af;
-border-top:1px solid #111;
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Método EVO — Evolução Física Estratégica</title>
+  <meta name="description" content="Método EVO — Sistema de treinamento baseado em ativação neuromuscular e evolução física estratégica." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<header>
+  <div class="bg-glow"></div>
 
-<h1>MÉTODO EVO</h1>
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">MÉTODO <span>EVO</span></div>
+      <div class="nav-links">
+        <a href="#oque">O Método</a>
+        <a href="#principios">Princípios</a>
+        <a href="#diferencial">Diferencial</a>
+        <a href="https://alespy80.github.io/evo360-diagnostico/" class="nav-cta">Avaliação Gratuita</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#oque">O Método</a>
+      <a href="#principios">Princípios</a>
+      <a href="#diferencial">Diferencial</a>
+      <a href="https://alespy80.github.io/evo360-diagnostico/">Avaliação Gratuita</a>
+    </div>
+  </nav>
 
-<p>
-Estratégia de evolução física baseada em ativação neuromuscular,
-controle de execução e progressão estratégica de treino.
-</p>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+      <div class="hero-badge"><span class="dot"></span> SISTEMA DE TREINAMENTO ESTRATÉGICO</div>
+      <h1 class="hero-titulo">MÉTODO<br><span>EVO</span></h1>
+      <p class="hero-sub">Estratégia de evolução física baseada em ativação neuromuscular, controle de execução e progressão estratégica de treino.</p>
+      <div class="hero-btns">
+        <a href="https://alespy80.github.io/evo360-diagnostico/" class="btn-prim">
+          Solicitar Avaliação Estratégica
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#oque" class="btn-sec">Conhecer o método</a>
+      </div>
+    </div>
+    <div class="hero-scroll">role para baixo</div>
+  </header>
 
-<a class="btn" href="https://alespy80.github.io/evo360-diagnostico/">
-Solicitar Avaliação Estratégica
-</a>
+  <!-- O QUE É -->
+  <section class="secao reveal" id="oque">
+    <div class="container">
+      <div class="sec-label">O que é o EVO</div>
+      <h2 class="sec-titulo">Um método baseado em como o corpo realmente funciona</h2>
+      <div class="oque-grid">
+        <div class="oque-texto">
+          <p>O EVO é um método de treinamento que utiliza princípios de <strong>ativação neuromuscular</strong> para aumentar o recrutamento de fibras musculares e melhorar a eficiência do treino.</p>
+          <p>Ao invés de focar apenas em volume de exercícios, o método prioriza <strong>execução técnica</strong>, <strong>tensão mecânica</strong> e <strong>intensidade estratégica</strong> para gerar evolução física real.</p>
+          <a href="https://alespy80.github.io/Aplica-ometodo/" class="btn-prim" target="_blank" rel="noopener">
+            Como funciona a estratégia →
+          </a>
+        </div>
+        <div class="oque-destaque">
+          <div class="od-sigla">EVO</div>
+          <div class="od-sub">Evolução</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</header>
+  <!-- PRINCÍPIOS -->
+  <section class="secao secao-dark reveal" id="principios">
+    <div class="container">
+      <div class="sec-label">Princípios do Método</div>
+      <h2 class="sec-titulo">Os 4 Pilares do EVO</h2>
+      <div class="pilares-grid">
+        <div class="pilar" style="--cor:#0ea5e9">
+          <div class="pilar-num">01</div>
+          <div class="pilar-icone">⚡</div>
+          <h3>Ativação Neural</h3>
+          <p>Maior recrutamento de fibras musculares através da ativação do sistema nervoso central.</p>
+        </div>
+        <div class="pilar" style="--cor:#ef4444">
+          <div class="pilar-num">02</div>
+          <div class="pilar-icone">🔩</div>
+          <h3>Tensão Mecânica</h3>
+          <p>Execução controlada e contração máxima para estimular hipertrofia muscular.</p>
+        </div>
+        <div class="pilar" style="--cor:#f59e0b">
+          <div class="pilar-num">03</div>
+          <div class="pilar-icone">🎯</div>
+          <h3>Intensidade Estratégica</h3>
+          <p>Uso de técnicas como drop set, rest-pause e contrações isométricas.</p>
+        </div>
+        <div class="pilar" style="--cor:#22c55e">
+          <div class="pilar-num">04</div>
+          <div class="pilar-icone">📈</div>
+          <h3>Eficiência do Treino</h3>
+          <p>Treinos mais inteligentes com foco em qualidade e evolução constante.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section>
+  <!-- DIFERENCIAL -->
+  <section class="secao reveal" id="diferencial">
+    <div class="container">
+      <div class="sec-label">O que diferencia o Método EVO</div>
+      <h2 class="sec-titulo">Treino tradicional vs. Método EVO</h2>
+      <div class="comp-wrap">
+        <div class="comp-col comp-trad">
+          <div class="comp-titulo">Treino Tradicional</div>
+          <ul>
+            <li>Treinos genéricos</li>
+            <li>Foco apenas em quantidade</li>
+            <li>Pouco controle de execução</li>
+            <li>Treinos repetitivos</li>
+            <li>Evolução mais lenta</li>
+          </ul>
+        </div>
+        <div class="comp-vs">VS</div>
+        <div class="comp-col comp-evo">
+          <div class="comp-titulo">Método EVO</div>
+          <ul>
+            <li>Treinos baseados em fisiologia</li>
+            <li>Foco em ativação neuromuscular</li>
+            <li>Execução técnica e controle muscular</li>
+            <li>Uso estratégico de intensidade</li>
+            <li>Evolução física otimizada</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h2>O que é o EVO</h2>
+  <!-- CTA FINAL -->
+  <section class="secao cta-final reveal">
+    <div class="container container-center">
+      <div class="cta-badge">EVO = Evolução</div>
+      <h2 class="sec-titulo cta-titulo">Treinar com estratégia.<br>Controlar o movimento.<br><span>Evoluir constantemente.</span></h2>
+      <div class="hero-btns">
+        <a href="https://alespy80.github.io/evo360-diagnostico/" class="btn-prim btn-grande">
+          Solicitar Avaliação Estratégica
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://alespy80.github.io/Aplica-ometodo/" class="btn-sec" target="_blank" rel="noopener">
+          Como funciona →
+        </a>
+      </div>
+    </div>
+  </section>
 
-<p>
-O EVO é um método de treinamento que utiliza princípios de ativação
-neuromuscular para aumentar o recrutamento de fibras musculares e
-melhorar a eficiência do treino.
-</p>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">MÉTODO <span>EVO</span></div>
+      <p>Evolução Física Estratégica</p>
+      <div class="footer-autor">
+        <strong>Alessandro Ferreira de Souza</strong>
+        <span>Bacharel em Educação Física · Gestão de TI · Massoterapia</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://alespy80.github.io/Alessandro-ferreira-/">Perfil</a>
+        <a href="https://alespy80.github.io/evo360-diagnostico/">Diagnóstico</a>
+        <a href="https://wa.me/5521979259432">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
 
-<p>
-Ao invés de focar apenas em volume de exercícios, o método prioriza
-execução técnica, tensão mecânica e intensidade estratégica para gerar
-evolução física real.
-</p>
+  <a class="whatsapp-float" href="https://wa.me/5521979259432" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
-</section>
-
-<section>
-
-<h2>Princípios do Método</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Ativação Neural</h3>
-<p>Maior recrutamento de fibras musculares através da ativação do sistema nervoso.</p>
-</div>
-
-<div class="card">
-<h3>Tensão Mecânica</h3>
-<p>Execução controlada e contração máxima para estimular hipertrofia muscular.</p>
-</div>
-
-<div class="card">
-<h3>Intensidade Estratégica</h3>
-<p>Uso de técnicas como drop set, rest pause e contrações isométricas.</p>
-</div>
-
-<div class="card">
-<h3>Eficiência do Treino</h3>
-<p>Treinos mais inteligentes com foco em qualidade e evolução constante.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>O que diferencia o Método EVO</h2>
-
-<div class="comparacao">
-
-<div class="box tradicional">
-
-<h3>Treino Tradicional</h3>
-
-<p>Treinos genéricos</p>
-<p>Foco apenas em quantidade</p>
-<p>Pouco controle de execução</p>
-<p>Treinos repetitivos</p>
-<p>Evolução mais lenta</p>
-
-</div>
-
-<div class="box evo">
-
-<h3>Método EVO</h3>
-
-<p>Treinos baseados em fisiologia</p>
-<p>Foco em ativação neuromuscular</p>
-<p>Execução técnica e controle muscular</p>
-<p>Uso estratégico de intensidade</p>
-<p>Evolução física otimizada</p>
-
-</div>
-
-</div>
-
-<div class="destaque">
-
-<h2>EVO = Evolução</h2>
-
-<p>
-Treinar com estratégia, controlar o movimento e evoluir constantemente.
-</p>
-
-<a class="btn" href="https://alespy80.github.io/Aplica-ometodo/">
-Como funciona a estratégia
-</a>
-
-<br><br>
-
-
-</div>
-
-</section>
-
-<footer>
-
-<p>Método EVO • Evolução Física Estratégica</p>
-
-<p> ALESSANDRO FERREIRA DE SOUZA• Bacharel em educação fisica - formação em gestao de TI e Massoterapia </p>
-
-</footer>
-
+  <script src="app.js"></script>
 </body>
-  </html>
+</html>
